@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+#article-one{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    background-color: #000;
+    align-items: center;
+    
+}
+
+#article-one h1 {
+    color: #fff;
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+#article-one p {
+    color: #fff;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+#article-two {
+    background-color: #000;
+    width: 100%;
+    height: fit-content;
+    padding: 50px;
+}
+
+#article-two h2{
+    color: #fff;
+    width: 40%;
+}
+
+#article-two p{
+    color: #fff;
+    width: 40%;
+    text-align: justify;
+}

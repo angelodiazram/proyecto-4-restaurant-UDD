@@ -1,0 +1,11 @@
+.navbar {
+    background-color: #000;
+}
+
+.navbar .nav-link {
+    font-size: 25px;
+}
+
+#logo {
+    width: 40px;
+}
