@@ -1,8 +1,13 @@
+import { Footer } from "../components/Footer";
+import { ReservaForm } from "../components/ReservaForm";
+import '../components/reservaPage.css';
 
 export const ReservaPage = () => {
     return (
         <>
-            <h1>Reserva Page Restaurant</h1>
+            <h2 id="reserva-h2">Reserva page</h2>
+            <ReservaForm />
+            <Footer />
         </>
     );
 };
