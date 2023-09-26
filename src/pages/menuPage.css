@@ -1,0 +1,12 @@
+#main-container #h2-container {
+    width: 100%;
+    height: fit-content;
+}
+
+#main-container #h2-container #h2-menu {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}

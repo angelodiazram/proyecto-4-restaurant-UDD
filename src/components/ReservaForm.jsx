@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import { addDoc, collection } from 'firebase/firestore';
 import { db } from '../config/firebase';
 
+import './reservaForm.css';
+
 export const ReservaForm = () => {
     
     const [ name, setName ] = useState(''); 
@@ -25,22 +27,24 @@ export const ReservaForm = () => {
 
     return (
         <>
-            <div className='container'>
-                <form onSubmit = {onCreateStore}>
-                    <label className="form-label">Nombre y apellido</label>
-                    <input className="form-control" type="text" value={name} onChange={ (e) => setName(e.target.value) }/>
-                    <br />
-                    <label className="form-label">Personas</label>
-                    <input className="form-control" type="number" value={diners} onChange={ (e) => setDiners(e.target.value) }/>
-                    <br />
-                    <label className="form-label">fecha</label>
-                    <input className="form-control" type="date" value={date} onChange={ (e) => setDate(e.target.value) }/>
-                    <br />
-                    <label className="form-label">Teléfono</label>
-                    <input className="form-control" type="text" value={phone} onChange={ (e) => setPhone(e.target.value) }/>
-                    <br />
-                    <button className='btn btn-success' type='submit'>Reservar</button>
+            <div className='container-form'>
+                <form onSubmit = {onCreateStore} className='main-form'>
+                    <label className='label-form'>Nombre y apellido</label>
+                    <input className='input-form' type="text" value={name} onChange={ (e) => setName(e.target.value) }/>
+                    
+                    <label className='label-form'>Personas</label>
+                    <input className='input-form' type="number" value={diners} onChange={ (e) => setDiners(e.target.value) }/>
+                    
+                    <label className='label-form'>fecha</label>
+                    <input className='input-form' type="date" value={date} onChange={ (e) => setDate(e.target.value) }/>
+                    
+                    <label className='label-form'>Teléfono</label>
+                    <input className='input-form' type="text" value={phone} onChange={ (e) => setPhone(e.target.value) }/>
+                    
+                    <button id='form-button' type='submit'>Reservar</button>
                 </form>
+
+                <img id='form-img' src="assets/imgs/comensales-hamburgueseria.jpg" alt="comensales"/>
             </div>
         </>
     );

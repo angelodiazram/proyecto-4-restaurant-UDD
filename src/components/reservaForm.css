@@ -1,0 +1,63 @@
+
+.container-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: #000;
+
+    padding: 70px 0px;
+}
+
+.container-form .main-form {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 30px;
+    margin-left: 30px;
+}
+
+.container-form .main-form .label-form {
+    color: #fff;
+    font-size: 25px;
+}
+
+.container-form .main-form .input-form {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.container-form .main-form .input-form:focus {
+    outline: none;
+    border-bottom: 1px solid #eb43b3;
+}
+
+.container-form .main-form input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); 
+    cursor: pointer 
+}
+
+.container-form .main-form #form-button {
+    border-radius: 5px;
+    width: 100px;
+    font-size: 20px;
+    align-self: center;
+    border: none;
+    transition: all 200ms;
+}
+
+.container-form .main-form #form-button:hover {
+    cursor: pointer;
+    background-color: #eb43b3;
+}
+
+.container-form #form-img {
+    height: 400px;
+}

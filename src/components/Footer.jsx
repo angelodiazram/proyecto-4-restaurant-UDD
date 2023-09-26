@@ -16,10 +16,10 @@ export const Footer = () => {
                         <h3>Mis datos</h3>
                     </div>
                     <ul className="ul-container">
-                        <li>Angelo Díaz</li>
-                        <li>angelodiazram@gmail.com</li>
-                        <li>+569 98022180</li>
-                        <li>Santiago de Chile, Ñuñoa</li>
+                        <li className="li-datos">Angelo Díaz</li>
+                        <li className="li-datos">angelodiazram@gmail.com</li>
+                        <li className="li-datos">+569 98022180</li>
+                        <li className="li-datos">Santiago de Chile, Ñuñoa</li>
                     </ul>
                 </div>
                 <div className="redes-sociales">
@@ -27,10 +27,10 @@ export const Footer = () => {
                         <h3>Nuestras Redes</h3>
                     </div>
                     <ul className="ul-container">
-                        <li className="social-icons"><FontAwesomeIcon icon={faInstagram} /></li>
-                        <li className="social-icons"><FontAwesomeIcon icon={faSquareFacebook} /></li>
-                        <li className="social-icons"><FontAwesomeIcon icon={faTiktok} /></li>
-                        <li className="social-icons"><FontAwesomeIcon icon={faTwitter} /></li>
+                        <li><a className="social-icons" href="https://www.instagram.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                        <li><a className="social-icons" href="https://www.facebook.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faSquareFacebook} /></a></li>
+                        <li><a className="social-icons" href="https://www.tiktok.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTiktok} /></a></li>
+                        <li><a className="social-icons" href="https://www.twitter.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter} /></a></li>
                     </ul>
                 </div>
             </footer>

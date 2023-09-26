@@ -1,0 +1,23 @@
+#main-container {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+#filling-box {
+    background-color: #000;
+    width: 100%;
+    height: 70px;
+}
+
+
+#p-reserva {
+    color: #fff;
+    background-color: #000;
+    font-size: 30px;
+    text-align: center;
+    height: 100px;
+    letter-spacing: 3px;
+    align-content: center;
+    line-height: 100px;
+}
