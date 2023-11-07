@@ -1,7 +1,7 @@
 import { GetReservas } from '../components/GetReservas';
 import './adminPage.css'
 
-export const AdminPAge = () => {
+export const AdminPage = () => {
     return (
         <>
             <h2 id='h2-admin'>Admin Page</h2>

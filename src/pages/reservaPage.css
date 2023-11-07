@@ -14,10 +14,16 @@
 #p-reserva {
     color: #fff;
     background-color: #000;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
-    height: 100px;
+    height: 200px;
     letter-spacing: 3px;
     align-content: center;
     line-height: 100px;
+    background-image: url(/assets/imgs/hamburguesa-menu-edit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    line-height: 200px;
+    text-shadow: 0px 0px 3px #000, 2px 2px 3px #000;
 }

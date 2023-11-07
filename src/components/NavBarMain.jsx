@@ -17,7 +17,6 @@ export const NavBarMain = () => {
                             <NavLink className="nav-link" aria-current="page" to="/">Inicio</NavLink>
                             <NavLink className="nav-link" to="/menu">Menú</NavLink>
                             <NavLink className="nav-link" to="/reserva">Reserva</NavLink>
-                            <NavLink className="nav-link" to="/admin">Administrador</NavLink>
                         </div>
                     </div>
                 </div>

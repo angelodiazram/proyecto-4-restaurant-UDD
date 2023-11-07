@@ -16,7 +16,7 @@ export const GetReservas = () => {
         const data = await getDocs(reservaCollectionRef);
 
         setReservas(
-            data.docs.map(doc => ({...doc.data(), id: doc.id}))
+            data.docs.map(doc => ({...doc.data(), id: doc.id})) // data() es una funcionalidad propia de firestore
         )
     }
 
@@ -29,12 +29,12 @@ export const GetReservas = () => {
     
     return (
         <>
-            <h2>Get Reservas</h2>
+            <h2>Listado de reservas</h2>
             <div className="container">
                 <div className="row">
                     <div className="col">
                         <div className="d-grid gap-2">
-                            <Link to='/admin' className="btn btn-success my-2 p-2">
+                            <Link to='/reserva' className="btn btn-success my-2 p-2">
                                 Crear reserva
                             </Link>
                         </div>
@@ -58,6 +58,10 @@ export const GetReservas = () => {
                                             <td>{reserva.diners}</td>
                                             <td>{reserva.date}</td>
                                             <td>{reserva.phone}</td>
+                                            <td>
+                                                <Link to={`edit/${reserva.id}`} className="btn btn-warning mx-2">Edit</Link>
+                                                <button className="btn btn-danger mx-2">Delete</button>
+                                            </td>
                                         </tr>
                                     ))
                                 }

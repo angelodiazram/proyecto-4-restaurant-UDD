@@ -1,14 +1,29 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container .accordion {
+    width: 70%;   
+}
+
 .container .accordion .accordion-item .accordion-header .accordion-button {
     background-color: #000;
     color: #fff;
     font-size: 25px;
 }
 
+.container .accordion .accordion-item .accordion-header .accordion-button:hover {
+    color: #eb43b3;
+}
+
 .container .accordion .accordion-item .accordion-body {
-    background-color: #eb43b3;
+    /* background-color: #eb43b3; */
+    background-color: #F6A230;
 }
 
 .container .accordion .accordion-item .accordion-body p {
     color: #fff;
     text-shadow: none;
+    text-shadow: 2px 2px 3px #000;
 }
