@@ -7,6 +7,11 @@ import { addDoc, collection } from 'firebase/firestore';
 
 import './reservaForm.css';
 
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
+const MySwal = withReactContent(Swal)
+
 export const ReservaForm = () => {
     
     const [ name, setName ] = useState(''); 
@@ -22,7 +27,8 @@ export const ReservaForm = () => {
         event.preventDefault()
         await addDoc( reservasCollectionRef, { name, diners, date, phone } ) // {name: name, diners: diners, date: date, phone: phone}
 
-        alert('tu reserva se hecho con exito!');
+        // alert('tu reserva se hecho con exito!');
+        MySwal.fire("Tu reserva se ha hecho con éxito, te esperamos !");
         navigate('/');
     }
 

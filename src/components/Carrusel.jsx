@@ -14,22 +14,22 @@ export const Carrusel = () => {
                     <div className="carousel-item active">
                         <img src="/assets/imgs/hamburguesa-carrusel-1.png" className="d-block w-100" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
-                            <h5>Ingredientes frescos</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
+                            <h5>Ingredientes Frescos</h5>
+                            <p>Seleccionamos minuciosamente ingredientes de la más alta calidad</p>
                         </div>
                     </div>
                     <div className="carousel-item">
                         <img src="/assets/imgs/hamburguesa-carrusel-2.png" className="d-block w-100" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
+                            <h5>Hamburguesas Deliciosas</h5>
+                            <p>Cada hamburguesa es una obra maestra de sabor</p>
                         </div>
                     </div>
                     <div className="carousel-item">
                         <img src="/assets/imgs/hamburguesa-carrusel-3.png" className="d-block w-100" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
+                            <h5>Tradición Familiar</h5>
+                            <p>Creando un legado de sabor y calidad de generación en generación</p>
                         </div>
                     </div>
                 </div>
