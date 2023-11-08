@@ -12,6 +12,10 @@
 
 
 #p-reserva {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     color: #fff;
     background-color: #000;
     font-size: 40px;
@@ -24,6 +28,26 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 50px;
-    line-height: 200px;
     text-shadow: 0px 0px 3px #000, 2px 2px 3px #000;
 }
+
+/*? SECCIÓN DE MEDIA QUERYS */
+
+@media (max-width: 1024px) {
+    
+    #p-reserva {
+        font-size: 30px;
+        line-height: 40px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 425px) {
+    #p-reserva {
+        font-size: 20px;
+    }
+}
+
+
+
+

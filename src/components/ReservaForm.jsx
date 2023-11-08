@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { CrudForm } from './CrudForm';
 
-import { addDoc, collection } from 'firebase/firestore';
 import { db } from '../config/firebase';
+import { addDoc, collection } from 'firebase/firestore';
 
 import './reservaForm.css';
-import { CrudForm } from './CrudForm';
 
 export const ReservaForm = () => {
     

@@ -1,7 +1,7 @@
 #main-container #h2-container {
     width: 100%;
     height: 200px;
-    background-image: url(../../public/assets/imgs/hamburguesa-menu-edit.jpg);
+    background-image: url(/assets/imgs/hamburguesa-menu-edit.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 50px;
@@ -27,4 +27,17 @@
 
 #main-container #div-nota #p-nota {
     color: #fff;
+}
+
+/*? SECCIÓN DE MEDIA QUERYS */
+
+@media (max-width: 426px) {
+    #main-container #h2-container #h2-menu {
+        line-height: 50px;
+    }
+
+    #main-container #div-nota #p-nota {
+        width: 90%;
+        text-align: center;
+    }
 }

@@ -5,7 +5,7 @@ export const NavBarMain = () => {
     return (
         <>
             <nav className="navbar navbar-expand-lg border-body fixed-top" data-bs-theme="dark">
-                <div className="container-fluid d-flex justify-content-end">
+                <div className="container-fluid d-flex justify-content-start">
                     <NavLink className="navbar-brand" to="/">
                         <img src="/assets/imgs/hamburguesa-logo.png" alt="logo" id="logo"/>
                     </NavLink>

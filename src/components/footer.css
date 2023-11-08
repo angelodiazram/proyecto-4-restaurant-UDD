@@ -53,3 +53,14 @@ li {
     cursor: pointer;
 }
 
+/*? SECCIÓN DE MEDIA QUERYS */
+
+@media (max-width: 426px) {
+    
+    #main-footer {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        height: 600px;
+    }
+}
+
