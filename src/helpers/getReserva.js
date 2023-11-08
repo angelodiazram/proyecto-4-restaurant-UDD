@@ -1,9 +1,9 @@
-import { collection, getDocs } from 'firebase/firestore'
-import { db } from "../config/firebase";
+// import { collection, getDocs } from 'firebase/firestore'
+// import { db } from "../config/firebase";
 
 
-const reservaCollectionRef = collection(db, 'reservas')
+// const reservaCollectionRef = collection(db, 'reservas')
 
-const getReservas = async() => {
-    const data = await getDocs(reservaCollectionRef);
-}
+// const getReservas = async() => {
+//     const data = await getDocs(reservaCollectionRef);
+// }

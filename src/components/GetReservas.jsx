@@ -5,6 +5,7 @@ import { db } from "../config/firebase";
 import { Link } from "react-router-dom";
 
 import './getReservas.css'
+import { confirmDeleteReserva } from "../helpers/deleteReserva";
 
 export const GetReservas = () => {
     
@@ -22,16 +23,16 @@ export const GetReservas = () => {
 
     useEffect(() => {
         getReservas()
-    }, [])
+    }, [reservas])
     
     
     
     
     return (
         <>
-            <h2>Listado de reservas</h2>
+            <h2 id="h2-listado">Listado de reservas</h2>
             <div className="container">
-                <div className="row">
+                <div className="row"  id="list-container">
                     <div className="col">
                         <div className="d-grid gap-2">
                             <Link to='/reserva' className="btn btn-success my-2 p-2">
@@ -60,7 +61,10 @@ export const GetReservas = () => {
                                             <td>{reserva.phone}</td>
                                             <td>
                                                 <Link to={`edit/${reserva.id}`} className="btn btn-warning mx-2">Edit</Link>
-                                                <button className="btn btn-danger mx-2">Delete</button>
+                                                <button 
+                                                    className="btn btn-danger mx-2"
+                                                    onClick={() => {confirmDeleteReserva(reserva.id)}}
+                                                >Delete</button>
                                             </td>
                                         </tr>
                                     ))

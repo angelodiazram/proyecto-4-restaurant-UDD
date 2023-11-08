@@ -4,6 +4,11 @@ import { useNavigate, useParams } from "react-router-dom";
 import { db } from "../config/firebase";
 import { CrudForm } from "./CrudForm";
 
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
+const MySwal = withReactContent(Swal)
+
 export const EditAdmin = () => {
     
     const [ name, setName ] = useState(''); 
@@ -38,7 +43,17 @@ export const EditAdmin = () => {
         }
 
         await updateDoc(user, data);
-        navigate('/admin');
+        MySwal.fire({
+            position: "top",
+            icon: "success",
+            title: `La reserva de ${name} ha sido actualizada`,
+            showConfirmButton: false,
+            timer: 1800
+        });
+        // alert('La reserva ha sido actualizada');
+        setTimeout(() => {
+            navigate('/admin');
+        }, 1800);
     }
 
     useEffect(() => {

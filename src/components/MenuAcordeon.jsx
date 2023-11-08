@@ -14,14 +14,14 @@ export const MenuAcordeon = () => {
                         </h2>
                         <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                             <div className="accordion-body">
-                                <p>Hmaburguesa rellena con queso ranco, cheddar y tocino, aros de cebolla, salsa de pepinillos y BBQ.</p>
+                                <p>Hamburguesa rellena con queso ranco, cheddar y tocino, aros de cebolla, salsa de pepinillos y BBQ.</p>
                             </div>
                         </div>
                     </div>
                     <div className="accordion-item">
                         <h2 className="accordion-header">
                             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Hmaburguesa 2 -- $8.800
+                                Hamburguesa 2 -- $8.800
                             </button>
                         </h2>
                         <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">

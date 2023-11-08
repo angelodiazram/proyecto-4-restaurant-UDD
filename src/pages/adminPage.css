@@ -1,3 +1,10 @@
+#admin-container{
+    background-image: url(/assets/imgs/FONDO_HAMBURGUESAS.jpg);
+    width: 100%;
+    height: 100vh;
+}
+
+
 #h2-admin{
     margin-top: 90px;
 }

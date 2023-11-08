@@ -3,10 +3,8 @@ import './adminPage.css'
 
 export const AdminPage = () => {
     return (
-        <>
-            <h2 id='h2-admin'>Admin Page</h2>
-            <p id='p-admin'>Como Administrador puedes visualizar la información ingresada por los clientes de tu restaurant</p>
+        <div id='admin-container'>
             <GetReservas />
-        </>
+        </div>
     );
 };
