@@ -26,4 +26,8 @@ para poder visualizar dichas reservas, editarlas o eliminarlas se debe acceder a
 
 Esto simula un entorno de "administrador" ya que, no se han hecho las rutas privadas y procesos de autorización
 
+## Diseños responsivo
+
+El diseños responsivo esta hecho en base a las medidas estandar dispuestas por las herramientas para el desarrolo de Google Chrome
+
 ## Espero que te guste mi proyecto !
