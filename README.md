@@ -14,7 +14,7 @@ npm install
 
 ## URL de producción:
 
-`"https://jovial-tartufo-713cfb.netlify.app/"`
+`"https://dangelohamburgers.netlify.app/"`
 
 ## CRUD para hacer reservas
 
@@ -22,7 +22,7 @@ npm install
 
 para poder visualizar dichas reservas, editarlas o eliminarlas se debe acceder a la siguiente ruta
 
-`"https://jovial-tartufo-713cfb.netlify.app/admin"`
+`"https://dangelohamburgers.netlify.app/admin"`
 
 Esto simula un entorno de "administrador" ya que, no se han hecho las rutas privadas y procesos de autorización
 
